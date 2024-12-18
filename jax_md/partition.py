@@ -699,7 +699,7 @@ def neighbor_list(displacement_or_metric: DisplacementOrMetricFn,
                   custom_mask_function: Optional[MaskFn] = None,
                   fractional_coordinates: bool = False,
                   format: NeighborListFormat = NeighborListFormat.Dense,
-                  **static_kwargs) -> NeighborFn:
+                  **static_kwargs) -> NeighborListFns:
   """Returns a function that builds a list neighbors for collections of points.
 
   Neighbor lists must balance the need to be jit compatible with the fact that
